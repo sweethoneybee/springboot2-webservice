@@ -10,9 +10,6 @@ buildscript {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
     }
 }
-plugins {
-    id 'java'
-}
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
@@ -21,13 +18,14 @@ apply plugin: 'io.spring.dependency-management'
 
 group 'com.springboot.book'
 version '1.0-SNAPSHOT'
+sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
-    jcenter()
 }
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.projectlombok:lombok')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
