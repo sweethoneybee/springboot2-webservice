@@ -1,4 +1,4 @@
-package com.springboot.book.springboot.web.dto;
+package com.springboot.book.springboot.web;
 
 import com.springboot.book.springboot.web.ByeController;
 import org.junit.Test;
